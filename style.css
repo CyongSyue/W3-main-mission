@@ -1,0 +1,300 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration:none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------------------------------style */
+.main,.footer,.conection{
+	font-family: 微軟正黑體;
+}
+.nav a,.menu h3,.menu a,.addbutton,.aside,.desser-text span,.page-button a,.copyright.aside,.text-left p{
+	color: #3F5D45;
+}
+.nav a,.menu h3,.menu a,.addbutton,.aside{
+	font-size: 24px;
+	font-weight: bold;
+}
+.menu h3,.desser-img p,.pb-number:hover{
+	color: #EAF0ED;
+	background-color: #3F5D45;
+}
+.nav a,.desser-img p,.copyright{
+	font-size: 16px;
+}
+.menu h3{	
+	text-align: center;
+}
+.menu li,.page-button a{
+	border: 1px solid #EAF0ED;
+}
+.menu li:hover,.emailfrom,.emailfrom form input[type="text"],.conection{
+	background-color:#EAF0ED;
+}
+.menu a{
+	text-align: center;
+}
+.desser-text span{
+	text-align: center;
+	font-size: 20px;
+	border-right:1px solid #EAF0ED;
+	border-left:1px solid #EAF0ED;
+}
+.addbutton{
+    font-family: 微軟正黑體;
+}
+.page-button a{
+	font-size: 20px;
+}
+.footer{
+    background-color: #3F5D45;
+}
+.caption h2{
+	color: #EAF0ED;
+	font-size: 24px;
+}
+.emailfrom form input[type="submit"]{
+	background-color:#FFE180;
+}
+.copyright.aside{
+	font-family: 'Times New Roman', Times, serif;
+}
+.text-left p{
+	line-height: 24px;
+}
+
+/* --------------------------------------layout */
+.header,.nav,.content,.product,.desser-text,.pagebar,.page-button,.page-button a,.tittle,.caption,.emailfrom,.conectionbox,.text-right,.tittle-straight {
+	display: flex;
+}
+.header,.tittle,.emailfrom,.content,.product,.desser-text,.conectionbox,.text-right {
+	justify-content: space-between;
+}
+.page-button a{
+	justify-content: center;
+}
+.pagebar{
+	justify-content: flex-end;
+}
+.header,.nav,.tittle,.emailfrom,.page-button a,.caption{
+	align-items: center;
+}
+.header h1{
+    float: left;
+}
+.header h1 a{    
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logo-all-dark.svg);
+    width: 160px;
+    height: 30px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.hamburg{
+	display: none;
+}
+.main{
+	max-width: 940px;
+	margin: 0 auto 60px;
+}
+.header{
+	padding: 30px 0;
+}
+.nav{
+	max-width: 300px;
+}
+.nav li{
+	margin-left: 30px;
+}
+.banner img,.menu a{
+	display: block;
+}
+.content{
+	padding: 60px 0;
+}
+.menu{
+	width: 300px;
+}
+.menu h3,.menu li{
+	padding: 16px 0 ;
+}
+.product{
+	width: 620px;
+	margin-left: 20px;
+	flex-wrap: wrap;
+}
+.desser{
+	width: 300px;
+}
+.desser-img{
+    position: relative;
+}
+.desser-img p{
+	position: absolute;
+    top: 0;
+    left: 20px;
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+    padding: 10px;
+}
+.favorite{
+	position: absolute;
+    top: 19px;
+    right: 22px;
+}
+.desser-text{
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+.desser-text span{
+	width: 127px;
+	padding: 14px 0;
+}
+.addbutton{
+	width: 300px;
+	border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.page-button a{
+	padding: 20px;
+}
+.tittlebox{
+	max-width: 780px;
+	margin: 0 auto;
+}
+.caption{
+    padding: 30px 0; 
+}
+.caption img{
+    width: 40px;
+    height: 40px;
+}
+.caption h2{
+	margin-left: 20px;
+}
+.emailfrom{
+	max-width: 380px;
+}
+.emailfrom form input[type="text"]{
+	border:0px;
+	padding: 20px;
+}
+.mail-24px{
+	margin-left: 20px;
+}
+.emailfrom form input[type="submit"]{
+    padding: 20px ;
+	border: 0px;
+}
+.conectionbox{
+	max-width: 780px;
+	margin: 0 auto;
+}
+.text-left p,.text-left a img,.text-right {
+	margin-bottom: 30px;
+}
+.logotype{
+	width: 170px;
+	height: 25px;
+}
+.line,.facebook{
+	width: 32px;
+	height: 32px;
+}
+
+.logotype{
+	margin: 40px 0 110px;
+}
+.text-right {
+	margin-top: 30px;
+	flex-direction: column;
+}
+.tittle-straight{
+	flex-direction: row-reverse;
+}
+
+
+/* -----------------------------------RWD */
+@media(max-width:375px){
+	
+	.header{
+		justify-content: space-around;
+	}
+	.product,.content,.emailfrom,.tittle{
+		justify-content: center;
+	}
+	.content,.tittle,.emailfrom{
+		flex-wrap: wrap;
+	}
+	.banner img,.tittlebox,.conectionbox{
+		width: 100%;
+	}
+	.menu{
+		width: 375px;
+	}
+	.product{
+		margin: 30px auto;
+	}
+	.conectionbox{
+		margin-left: 30px;
+	}
+	.text-right,.nav-text-link{
+		display: none;
+	}
+	.hamburg{
+		display: block;
+	}
+	.tittlebox{
+		padding-bottom: 30px;
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
