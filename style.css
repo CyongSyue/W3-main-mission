@@ -1,3 +1,4 @@
+/* css reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,259 +43,365 @@ table {
 	border-spacing: 0;
 }
 
-/* --------------------------------------style */
-.main,.footer,.conection{
-	font-family: 微軟正黑體;
+/*---- For All ----*/
+body{
+    font-family: 微軟正黑體, sans-serif;
 }
-.nav a,.menu h3,.menu a,.addbutton,.aside,.desser-text span,.page-button a,.copyright.aside,.text-left p{
-	color: #3F5D45;
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
-.nav a,.menu h3,.menu a,.addbutton,.aside{
-	font-size: 24px;
-	font-weight: bold;
-}
-.menu h3,.desser-img p,.pb-number:hover{
-	color: #EAF0ED;
-	background-color: #3F5D45;
-}
-.nav a,.desser-img p,.copyright{
-	font-size: 16px;
-}
-.menu h3{	
-	text-align: center;
-}
-.menu li,.page-button a{
-	border: 1px solid #EAF0ED;
-}
-.menu li:hover,.emailfrom,.emailfrom form input[type="text"],.conection{
-	background-color:#EAF0ED;
-}
-.menu a{
-	text-align: center;
-}
-.desser-text span{
-	text-align: center;
-	font-size: 20px;
-	border-right:1px solid #EAF0ED;
-	border-left:1px solid #EAF0ED;
-}
-.addbutton{
-    font-family: 微軟正黑體;
-}
-.page-button a{
-	font-size: 20px;
-}
-.footer{
-    background-color: #3F5D45;
-}
-.caption h2{
-	color: #EAF0ED;
-	font-size: 24px;
-}
-.emailfrom form input[type="submit"]{
-	background-color:#FFE180;
-}
-.copyright.aside{
-	font-family: 'Times New Roman', Times, serif;
-}
-.text-left p{
-	line-height: 24px;
+a{
+    display: block;
+    text-decoration: none;
 }
 
-/* --------------------------------------layout */
-.header,.nav,.content,.product,.desser-text,.pagebar,.page-button,.page-button a,.tittle,.caption,.emailfrom,.conectionbox,.text-right,.tittle-straight {
-	display: flex;
+/*---- Container ----*/
+.container{
+    max-width: 940px;
+    margin: 0 auto;
 }
-.header,.tittle,.emailfrom,.content,.product,.desser-text,.conectionbox,.text-right {
-	justify-content: space-between;
+
+/*---- Header ----*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
 }
-.page-button a{
-	justify-content: center;
-}
-.pagebar{
-	justify-content: flex-end;
-}
-.header,.nav,.tittle,.emailfrom,.page-button a,.caption{
-	align-items: center;
+.navbar{
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
 }
 .header h1{
-    float: left;
+    width: 25%;
 }
-.header h1 a{    
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logo-all-dark.svg);
-    width: 160px;
-    height: 30px;
+.LOGO{
     display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
     text-indent: 101%;
-    overflow: hidden;
+    height: 40px;
     white-space: nowrap;
-}
-.hamburg{
-	display: none;
-}
-.main{
-	max-width: 940px;
-	margin: 0 auto 60px;
-}
-.header{
-	padding: 30px 0;
-}
-.nav{
-	max-width: 300px;
-}
-.nav li{
-	margin-left: 30px;
-}
-.banner img,.menu a{
-	display: block;
-}
-.content{
-	padding: 60px 0;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .menu{
-	width: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0px 60px 0px auto;
 }
-.menu h3,.menu li{
-	padding: 16px 0 ;
+.menu-link{
+    display: block;
+    padding: 5px 30px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    line-height: 22px;
+    color: #3F5D45;
+    font-weight: bold;
 }
+.menu-link:hover,.shopping-car:hover,.navbar:hover{
+    background-color: #EAF0Ed;
+}
+.shopping-car{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*---- Banner ----*/
+.banner{
+    margin-bottom: 60px;
+}
+
+/*---- Content ----*/
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*---- Checklist ----*/
+.checklist{
+    width: 33%;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.checklist h2{
+    background-color: #3F5D45;
+    color: #ffffff;
+    padding: 16px 0px;
+}
+.checklist li{
+    border: 1px solid #EAF0Ed;
+}
+.checklist li a{
+    display: block;
+    padding: 16px 0px;
+    color: #3F5D45;
+    text-decoration: none;
+}
+.checklist li a:hover{
+    background-color: #EAF0Ed;
+}
+
+/*---- Product ----*/
 .product{
-	width: 620px;
-	margin-left: 20px;
-	flex-wrap: wrap;
+    width: 66%;
 }
-.desser{
-	width: 300px;
+.productlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
 }
-.desser-img{
+.item{
+    margin-bottom: 20px;
+}
+.item-header{
     position: relative;
 }
-.desser-img p{
-	position: absolute;
+.tag{
+    padding: 10px;
+    position: absolute;
     top: 0;
     left: 20px;
     writing-mode: vertical-lr;
-    letter-spacing: 5px;
-    padding: 10px;
+    background-color: #3F5D45;
+    color: #EAF0Ed;
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: bold;
 }
-.favorite{
-	position: absolute;
-    top: 19px;
-    right: 22px;
+.like{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
 }
-.desser-text{
-	margin-bottom: 20px;
-	flex-wrap: wrap;
+.item-info{
+    display: flex;
+    align-items: center;
+    border: 1px solid #EAF0Ed;
+    font-size: 20px;
 }
-.desser-text span{
-	width: 127px;
-	padding: 14px 0;
+.name{
+    color: #3F5D45;
+    font-weight: lighter;
+    text-align: center;
+    padding: 15px 0;
+    flex: 1px;
 }
-.addbutton{
-	width: 300px;
-	border: none;
-    padding-top: 16px;
-    padding-bottom: 16px;
+.price{
+    text-align: center;
+    line-height: 28px;
+    font-weight: bold;
+    color: #3F5D45;
+    padding: 15px 20px;
+    border-left: 1px solid #EAF0ED;
 }
-.page-button a{
-	padding: 20px;
+.addtoshopcar{
+    text-align: center;
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 0;
 }
-.tittlebox{
-	max-width: 780px;
-	margin: 0 auto;
+/*---- Page ----*/
+.page-btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:10px 0px 60px;
 }
-.caption{
-    padding: 30px 0; 
+.page-btn{
+    border: 1px solid #EAF0Ed;
+    text-align: center;
 }
-.caption img{
-    width: 40px;
+.page-btn a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #3F5D45;
+}
+.page-btn a:hover{
+    background-color: #3F5D45;
+    color: #EAF0Ed;
+}
+.arrow:hover{
+    border-color: #3F5D45;
+}
+.arrow a{
+    padding: 16px;
+}
+.arrow a:hover{
+    background-color: #ffffff;
+}
+
+/*---- From ----*/
+.footer-form{
+    background-color: #3F5D45;
+    padding: 30px;
+}
+.container-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label-form{
+    display: flex;
+    align-items: center;
+}
+.label-form img{
     height: 40px;
+    margin-right: 20px;
 }
-.caption h2{
-	margin-left: 20px;
+.label-form span{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #EAF0Ed;
 }
-.emailfrom{
-	max-width: 380px;
+.form-input{
+    display: flex;
+    position: relative;
 }
-.emailfrom form input[type="text"]{
-	border:0px;
-	padding: 20px;
+.form-input input {
+    display:block;
+    padding-left: 65px;
+    font-weight: bold;
+    color: #3F5D45;
+    outline: none;
+    border: none;
 }
-.mail-24px{
-	margin-left: 20px;
+.mail-icon{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    bottom: 16px;
 }
-.emailfrom form input[type="submit"]{
-    padding: 20px ;
-	border: 0px;
-}
-.conectionbox{
-	max-width: 780px;
-	margin: 0 auto;
-}
-.text-left p,.text-left a img,.text-right {
-	margin-bottom: 30px;
-}
-.logotype{
-	width: 170px;
-	height: 25px;
-}
-.line,.facebook{
-	width: 32px;
-	height: 32px;
-}
-
-.logotype{
-	margin: 40px 0 110px;
-}
-.text-right {
-	margin-top: 30px;
-	flex-direction: column;
-}
-.tittle-straight{
-	flex-direction: row-reverse;
+.form-input button{
+    cursor: pointer;
+    background-color: #FFE180;
+    padding: 16px;
+    outline: none;
+    border: none;
 }
 
-
-/* -----------------------------------RWD */
-@media(max-width:375px){
-	
-	.header{
-		justify-content: space-around;
-	}
-	.product,.content,.emailfrom,.tittle{
-		justify-content: center;
-	}
-	.content,.tittle,.emailfrom{
-		flex-wrap: wrap;
-	}
-	.banner img,.tittlebox,.conectionbox{
-		width: 100%;
-	}
-	.menu{
-		width: 375px;
-	}
-	.product{
-		margin: 30px auto;
-	}
-	.conectionbox{
-		margin-left: 30px;
-	}
-	.text-right,.nav-text-link{
-		display: none;
-	}
-	.hamburg{
-		display: block;
-	}
-	.tittlebox{
-		padding-bottom: 30px;
-	}
-	
-	
-	
+/*---- Footer ----*/
+.footer{
+    background-color: #EAF0ED;
+    padding: 30px 0;
+}
+.footer-inner-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contact-method{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.address-list{
+    margin-top: 30px;
+    font-style: 16px;
+    line-height: 24px;
+    color: #3F5D45;
+}
+.slogan{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #3F5D45;
+}
+.footer-inner-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.c-link{
+    display: flex;
+}
+.c-link a{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+.copyright{
+    font-size: 12px;
+    color: #3F5D45;
 }
 
-
-
-
-
-
-
+/*---- max-width: 991px ----*/
+@media (max-width: 991px){
+    .container{
+        max-width: 767px;
+    }
+    .banner{
+        margin-bottom: 0;
+    }
+    .checklist{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .product{
+        width: 100%;
+    }
+    .productlist {
+        justify-content: space-around;
+    }
+    .page-btns {
+        justify-content: center;
+    }
+    .container-form {
+        flex-direction: column;
+    }
+    .label-form {
+        margin-bottom: 10px;
+    }
+}
+/*---- max-width: 767px ----*/
+@media (max-width: 767px){
+    .slogan{
+        display: none;
+    }
+    .navbar{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .header{
+        justify-content: space-around;
+    }
+    .LOGO{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg);
+    }
+    .footer-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-method img{
+        margin-bottom: 40px;
+    }
+    .footer-inner-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .c-link{
+        margin-bottom: 23px;
+    }
+}
